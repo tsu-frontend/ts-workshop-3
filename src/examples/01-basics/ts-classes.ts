@@ -99,4 +99,5 @@ const processStudent = (student: StudentInterface): void => {
 
 processStudent(student1); // Type-safe function calls
 
-export {Person, Student, PersonInterface, StudentInterface};
+export {Person, Student};
+export type {PersonInterface, StudentInterface};

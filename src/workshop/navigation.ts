@@ -39,15 +39,15 @@ export class WorkshopNavigation {
 
   public nextSection(): void {
     const nextIndex = (this.currentIndex + 1) % this.sections.length;
-    this.navigateToSection(this.sections[nextIndex]);
+    this.navigateToSection(this.sections[nextIndex]!);
   }
 
   public previousSection(): void {
     const prevIndex = (this.currentIndex - 1 + this.sections.length) % this.sections.length;
-    this.navigateToSection(this.sections[prevIndex]);
+    this.navigateToSection(this.sections[prevIndex]!);
   }
 
   public getCurrentSection(): string {
-    return this.sections[this.currentIndex];
+    return this.sections[this.currentIndex]!;
   }
 }
