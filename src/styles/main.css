@@ -102,7 +102,7 @@ body {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -136,6 +136,96 @@ body {
   left: 0;
   color: #27ae60;
   font-weight: bold;
+}
+
+/* Learning Buttons */
+.learning-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.learn-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.learn-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #1f5f8b);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.learn-btn.active {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  transform: scale(1.02);
+}
+
+/* Code Display */
+.code-display {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  min-height: 200px;
+  border: 2px solid #34495e;
+}
+
+.code-display pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Syntax Highlighting */
+.keyword {
+  color: #e74c3c;
+}
+.string {
+  color: #f39c12;
+}
+.comment {
+  color: #95a5a6;
+  font-style: italic;
+}
+.type {
+  color: #3498db;
+}
+.error {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+}
+.success {
+  color: #27ae60;
+}
+
+/* Example Display */
+.example-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #34495e;
+}
+
+.example-header h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.example-header p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .code-demo {

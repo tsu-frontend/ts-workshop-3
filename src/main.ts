@@ -2,8 +2,10 @@
 // This demonstrates the complete development workflow from TS source to browser
 
 import {WorkshopNavigation} from "./workshop/navigation";
+import {ExampleDisplay} from "./workshop/examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
+import "prismjs/themes/prism-tomorrow.css";
 
 console.log("🚀 TypeScript Classes Workshop - Vite Build System Active!");
 
@@ -13,8 +15,9 @@ demoStudent.addGrade("TypeScript", 95);
 console.log("✅ TypeScript class instantiated successfully!");
 console.log(`📊 Demo student average: ${demoStudent.getAverageGrade()}`);
 
-// Initialize workshop navigation
+// Initialize workshop navigation and examples
 const navigation = new WorkshopNavigation();
+const examples = new ExampleDisplay();
 
 // Demonstrate TypeScript compilation in action
 class WorkshopDemo {
