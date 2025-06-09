@@ -3,6 +3,7 @@
 
 import {WorkshopNavigation} from "./workshop/navigation";
 import {ExampleDisplay} from "./workshop/examples";
+import {ProjectExamples} from "./workshop/project-examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
 import "prismjs/themes/prism-tomorrow.css";
@@ -18,6 +19,7 @@ console.log(`📊 Demo student average: ${demoStudent.getAverageGrade()}`);
 // Initialize workshop navigation and examples
 const navigation = new WorkshopNavigation();
 const examples = new ExampleDisplay();
+const projectExamples = new ProjectExamples();
 
 // Demonstrate TypeScript compilation in action
 class WorkshopDemo {
