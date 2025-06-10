@@ -1,13 +1,15 @@
 // Main TypeScript entry point for the workshop
 // This demonstrates the complete development workflow from TS source to browser
 
+/// <reference types="vite/client" />
+
 import {WorkshopNavigation} from "./workshop/navigation";
 import {ExampleDisplay} from "./workshop/examples";
 import {ProjectExamples} from "./workshop/project-examples";
 import {AdvancedExamples} from "./workshop/advanced-examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
-import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/themes/prism.css";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-typescript";
 
