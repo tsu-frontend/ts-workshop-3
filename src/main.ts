@@ -4,6 +4,7 @@
 import {WorkshopNavigation} from "./workshop/navigation";
 import {ExampleDisplay} from "./workshop/examples";
 import {ProjectExamples} from "./workshop/project-examples";
+import {AdvancedExamples} from "./workshop/advanced-examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
 import "prismjs/themes/prism-tomorrow.css";
@@ -22,6 +23,7 @@ console.log(`📊 Demo student average: ${demoStudent.getAverageGrade()}`);
 const navigation = new WorkshopNavigation();
 const examples = new ExampleDisplay();
 const projectExamples = new ProjectExamples();
+const advancedExamples = new AdvancedExamples();
 
 // Demonstrate TypeScript compilation in action
 class WorkshopDemo {
