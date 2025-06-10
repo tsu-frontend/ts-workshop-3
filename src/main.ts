@@ -7,6 +7,8 @@ import {ProjectExamples} from "./workshop/project-examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
 import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/components/prism-javascript";
+import "prismjs/components/prism-typescript";
 
 console.log("🚀 TypeScript Classes Workshop - Vite Build System Active!");
 

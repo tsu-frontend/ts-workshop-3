@@ -1,7 +1,5 @@
 // Workshop Code Examples - Interactive Display System
-import Prism from "prismjs";
-import "prismjs/components/prism-typescript";
-import "prismjs/components/prism-javascript";
+import {SyntaxHighlighter} from "./syntax-highlighter";
 
 interface CodeExample {
   title: string;
@@ -171,14 +169,8 @@ class Student {
   }
 
   private formatCode(code: string, language: "javascript" | "typescript"): string {
-    // Use Prism.js for professional syntax highlighting
-    const grammar = Prism.languages[language];
-    if (!grammar) {
-      console.warn(`Language ${language} not found, using plain text`);
-      return code;
-    }
-
-    const highlighted = Prism.highlight(code, grammar, language);
+    // Use shared syntax highlighter utility
+    const highlighted = language === "typescript" ? SyntaxHighlighter.highlightTypeScript(code) : SyntaxHighlighter.highlightJavaScript(code);
 
     // Add our custom indicators on top of Prism highlighting
     return highlighted.replace(/(❌[^\n]*)/g, '<span class="error">$1</span>').replace(/(✅[^\n]*)/g, '<span class="success">$1</span>');

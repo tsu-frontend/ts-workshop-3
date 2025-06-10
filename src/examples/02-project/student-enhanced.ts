@@ -201,13 +201,13 @@ console.log(`Updated email: ${student.email}`);
 // Test error handling
 try {
   student.addGrade("Biology", 150); // Invalid grade
-} catch (error) {
+} catch (error: any) {
   console.log(`Error: ${error.message}`);
 }
 
 try {
   student.email = "invalid-email"; // Invalid email
-} catch (error) {
+} catch (error: any) {
   console.log(`Error: ${error.message}`);
 }
 
