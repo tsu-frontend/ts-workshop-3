@@ -9,7 +9,7 @@ import {ProjectExamples} from "./workshop/project-examples";
 import {AdvancedExamples} from "./workshop/advanced-examples";
 import {Student} from "./examples/01-basics/ts-classes";
 import "./styles/main.css";
-import "prismjs/themes/prism.css";
+import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-typescript";
 
