@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@types/prismjs": "^1.26.5",
-    "prismjs": "^1.30.0"
+    "prismjs": "^1.30.0",
+    "terser": "^5.42.0"
   }
 }
